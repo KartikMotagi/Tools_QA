@@ -15,7 +15,7 @@ namespace Tools_QA.Config_File
         [OneTimeSetUp]
         public void Start_Execution()
         {
-            Console.WriteLine("BrowserStarted");
+            Console.WriteLine("Browser Started");
             _driver = new ChromeDriver();
             _driver.Manage().Window.Maximize();
             _driver.Navigate().GoToUrl("https://demoqa.com/text-box");
@@ -26,7 +26,7 @@ namespace Tools_QA.Config_File
         public void End_Execution()
         {
             _driver.Quit();
-             Console.WriteLine("BrowserClosed");
+             Console.WriteLine("Browser Closed");
 
         }
     }
