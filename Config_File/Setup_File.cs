@@ -19,7 +19,7 @@ namespace Tools_QA.Config_File
             _driver = new ChromeDriver();
             _driver.Manage().Window.Maximize();
             _driver.Navigate().GoToUrl("https://demoqa.com/text-box");
-            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
         }
 
         [OneTimeTearDown]
