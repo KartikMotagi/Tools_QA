@@ -15,6 +15,7 @@ namespace Tools_QA.Config_File
         [OneTimeSetUp]
         public void Start_Execution()
         {
+            Console.WriteLine("BrowserStarted");
             _driver = new ChromeDriver();
             _driver.Manage().Window.Maximize();
             _driver.Navigate().GoToUrl("https://demoqa.com/text-box");
