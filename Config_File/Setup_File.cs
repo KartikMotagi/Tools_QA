@@ -26,6 +26,8 @@ namespace Tools_QA.Config_File
         public void End_Execution()
         {
             _driver.Quit();
+             Console.WriteLine("BrowserClosed");
+
         }
     }
 }
